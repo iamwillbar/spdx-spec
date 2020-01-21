@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>8 Annotations - specification v2.2.0</title>
+  <title>8 Annotations - specification v3.0 - DRAFT</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -36,7 +36,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> specification v2.2.0</a>
+        <a href=".." class="icon icon-home"> specification v3.0 - DRAFT</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -115,42 +115,22 @@
           
             <li class="toctree-l1">
 		
-    <a class="" href="../9-review-information-deprecated/">9 Review Information (deprecated)</a>
+    <a class="" href="../appendix-I-RDF-data-model-implementation-and-identifier-syntax/">Appendix I: RDF Data Model Implementation and Identifier Syntax</a>
 	    </li>
           
             <li class="toctree-l1">
 		
-    <a class="" href="../appendix-I-SPDX-license-list/">Appendix I: SPDX License List</a>
+    <a class="" href="../appendix-II-SPDX-license-expressions/">Appendix II: SPDX License Expressions</a>
 	    </li>
           
             <li class="toctree-l1">
 		
-    <a class="" href="../appendix-II-license-matching-guidelines-and-templates/">Appendix II: License Matching Guidelines and Templates</a>
+    <a class="" href="../appendix-III-external-repository-identifiers/">Appendix III: External Repository Identifiers</a>
 	    </li>
           
             <li class="toctree-l1">
 		
-    <a class="" href="../appendix-III-RDF-data-model-implementation-and-identifier-syntax/">Appendix III: RDF Data Model Implementation and Identifier Syntax</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../appendix-IV-SPDX-license-expressions/">Appendix IV: SPDX License Expressions</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../appendix-V-using-SPDX-short-identifiers-in-source-files/">Appendix V: Using SPDX short identifiers in Source Files</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../appendix-VI-external-repository-identifiers/">Appendix VI: External Repository Identifiers</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../appendix-VII-creative-commons-attribution-license-3.0-unported/">Appendix VII: Creative Commons Attribution License 3.0 Unported</a>
+    <a class="" href="../appendix-IV-creative-commons-attribution-license-3.0-unported/">Appendix IV: Creative Commons Attribution License 3.0 Unported</a>
 	    </li>
           
         </ul>
@@ -163,7 +143,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">specification v2.2.0</a>
+        <a href="..">specification v3.0 - DRAFT</a>
       </nav>
 
       
@@ -203,7 +183,7 @@
 <p>Example:</p>
 <pre><code>&lt;Annotation&gt;
     &lt;annotator&gt; Person: Jane Doe () &lt;/annotator&gt;
-&lt;/Annotation&gt;
+&lt;/Annotations&gt;
 </code></pre>
 <h2 id="82-annotation-date">8.2 Annotation Date <a name="8.2"></a></h2>
 <p><strong>8.2.1</strong> Purpose: Identify when the comment was made. This is to be specified according to the combined date and time in the UTC format, as specified in the ISO 8601 standard.</p>
@@ -272,7 +252,7 @@
 &lt;/SpdxElement rdf:about=”#SPDXRef-45”&gt;
 </code></pre>
 <h2 id="85-annotation-comment">8.5 Annotation Comment <a name="8.5"></a></h2>
-<p><strong>8.5.1</strong> Purpose: This required free form text field permits the annotator to provide commentary on the analysis.</p>
+<p><strong>8.5.1</strong> Purpose: This optional free form text field permits the annotator to provide commentary on the analysis.</p>
 <p><strong>8.5.2</strong> Intent: This allows the annonator to provide independent assessment and note any points where there is disagreement with the analysis.</p>
 <p><strong>8.5.3</strong> Cardinality: Conditional (Mandatory, one), if there is an Annotation.</p>
 <p><strong>8.5.4</strong> Data Format: Free form text that can span multiple lines.</p>
@@ -299,7 +279,7 @@ but the concluded license is one of the options.&lt;/text&gt;
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../9-review-information-deprecated/" class="btn btn-neutral float-right" title="9 Review Information (deprecated)">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../appendix-I-RDF-data-model-implementation-and-identifier-syntax/" class="btn btn-neutral float-right" title="Appendix I: RDF Data Model Implementation and Identifier Syntax">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../7-relationships-between-SPDX-elements/" class="btn btn-neutral" title="7 Relationships between SPDX Elements"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -312,7 +292,7 @@ but the concluded license is one of the options.&lt;/text&gt;
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2010 - 2020 Linux Foundation and its Contributors.</p>
+      <p>Copyright &copy; 2010 - 2019 Linux Foundation and its Contributors.</p>
     
   </div>
 
@@ -333,7 +313,7 @@ but the concluded license is one of the options.&lt;/text&gt;
         <span><a href="../7-relationships-between-SPDX-elements/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../9-review-information-deprecated/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../appendix-I-RDF-data-model-implementation-and-identifier-syntax/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

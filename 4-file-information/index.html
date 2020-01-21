@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>4 File Information - specification v2.2.0</title>
+  <title>4 File Information - specification v3.0 - DRAFT</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -36,7 +36,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> specification v2.2.0</a>
+        <a href=".." class="icon icon-home"> specification v3.0 - DRAFT</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -93,19 +93,11 @@
         
             <li><a class="toctree-l3" href="#48-copyright-text">4.8 Copyright Text </a></li>
         
-            <li><a class="toctree-l3" href="#49-artifact-of-project-name-deprecated">4.9 Artifact of Project Name (deprecated) </a></li>
-        
-            <li><a class="toctree-l3" href="#410-artifact-of-project-homepage-deprecated">4.10 Artifact of Project Homepage (deprecated) </a></li>
-        
-            <li><a class="toctree-l3" href="#411-artifact-of-project-uniform-resource-identifier-deprecated">4.11 Artifact of Project Uniform Resource Identifier (deprecated) </a></li>
-        
             <li><a class="toctree-l3" href="#412-file-comment">4.12 File Comment </a></li>
         
             <li><a class="toctree-l3" href="#413-file-notice">4.13 File Notice </a></li>
         
             <li><a class="toctree-l3" href="#414-file-contributor">4.14 File Contributor </a></li>
-        
-            <li><a class="toctree-l3" href="#415-file-dependencies-deprecated">4.15 File Dependencies (deprecated) </a></li>
         
         </ul>
     
@@ -135,42 +127,22 @@
           
             <li class="toctree-l1">
 		
-    <a class="" href="../9-review-information-deprecated/">9 Review Information (deprecated)</a>
+    <a class="" href="../appendix-I-RDF-data-model-implementation-and-identifier-syntax/">Appendix I: RDF Data Model Implementation and Identifier Syntax</a>
 	    </li>
           
             <li class="toctree-l1">
 		
-    <a class="" href="../appendix-I-SPDX-license-list/">Appendix I: SPDX License List</a>
+    <a class="" href="../appendix-II-SPDX-license-expressions/">Appendix II: SPDX License Expressions</a>
 	    </li>
           
             <li class="toctree-l1">
 		
-    <a class="" href="../appendix-II-license-matching-guidelines-and-templates/">Appendix II: License Matching Guidelines and Templates</a>
+    <a class="" href="../appendix-III-external-repository-identifiers/">Appendix III: External Repository Identifiers</a>
 	    </li>
           
             <li class="toctree-l1">
 		
-    <a class="" href="../appendix-III-RDF-data-model-implementation-and-identifier-syntax/">Appendix III: RDF Data Model Implementation and Identifier Syntax</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../appendix-IV-SPDX-license-expressions/">Appendix IV: SPDX License Expressions</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../appendix-V-using-SPDX-short-identifiers-in-source-files/">Appendix V: Using SPDX short identifiers in Source Files</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../appendix-VI-external-repository-identifiers/">Appendix VI: External Repository Identifiers</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../appendix-VII-creative-commons-attribution-license-3.0-unported/">Appendix VII: Creative Commons Attribution License 3.0 Unported</a>
+    <a class="" href="../appendix-IV-creative-commons-attribution-license-3.0-unported/">Appendix IV: Creative Commons Attribution License 3.0 Unported</a>
 	    </li>
           
         </ul>
@@ -183,7 +155,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">specification v2.2.0</a>
+        <a href="..">specification v3.0 - DRAFT</a>
       </nav>
 
       
@@ -332,7 +304,7 @@ FileChecksum: MD5: 624c1abb3664f4b35547e7c73864ad24
 <h2 id="45-concluded-license">4.5 Concluded License <a name="4.5"></a></h2>
 <p><strong>4.5.1</strong> Purpose: This field contains the license the SPDX file creator has concluded as governing the file or alternative values if the governing license cannot be determined.</p>
 <p>The options to populate this field are limited to:</p>
-<p>A valid SPDX License Expression as defined in <a href="../appendix-IV-SPDX-license-expressions/">Appendix IV</a>;</p>
+<p>A valid SPDX License Expression as defined in <a href="../appendix-II-SPDX-license-expressions/">Appendix II</a>;</p>
 <p><code>NONE</code>, if the SPDX file creator concludes there is no license available for this file; or</p>
 <p><code>NOASSERTION</code>, if:</p>
 <p>(i) the SPDX file creator has attempted to, but cannot reach a reasonable objective determination;</p>
@@ -343,7 +315,7 @@ FileChecksum: MD5: 624c1abb3664f4b35547e7c73864ad24
 <p><strong>4.5.3</strong> Cardinality: Mandatory, one.</p>
 <p><strong>4.5.4</strong> Data Format: <code>&lt;SPDX License Expression&gt;</code> | <code>NONE</code> | <code>NOASSERTION</code></p>
 <p>where:</p>
-<p><code>&lt;SPDX License Expression&gt;</code> is a valid SPDX License Expression as defined in Appendix IV.</p>
+<p><code>&lt;SPDX License Expression&gt;</code> is a valid SPDX License Expression as defined in <a href="../appendix-II-SPDX-license-expressions/">Appendix II</a>.</p>
 <p><strong>4.5.5</strong> Tag: <code>LicenseConcluded:</code></p>
 <p>Example:</p>
 <pre><code>LicenseConcluded: LGPL-2.0
@@ -384,7 +356,7 @@ A reference to the license, denoted by LicenseRef-<code>[idstring]</code>, if th
 <p>| <code>NONE</code> | <code>NOASSERTION</code></p>
 <p>where:</p>
 <p><code>&lt;SPDX License Expression&gt;</code> is a valid SPDX License Expression</p>
-<p>as defined in <a href="../appendix-IV-SPDX-license-expressions/">Appendix IV</a>.</p>
+<p>as defined in <a href="../appendix-II-SPDX-license-expressions/">Appendix II</a>.</p>
 <p>"DocumentRef-"<code>[idstring]</code>: is an optional reference to an external SPDX</p>
 <p>document as described in <a href="../2-document-creation-information/#2.6">section 2.6</a></p>
 <p><code>[idstring]</code> is a unique string containing letters, numbers, <code>.</code> and/or <code>-</code></p>
@@ -445,65 +417,6 @@ This information was found in the COPYING.txt file in the xyz directory.&lt;/tex
     &lt;/copyrightText&gt;
 &lt;/File&gt;
 </code></pre>
-<h2 id="49-artifact-of-project-name-deprecated">4.9 Artifact of Project Name (deprecated) <a name="4.9"></a></h2>
-<p><strong>4.9.1</strong> Purpose: To indicate that a file has been derived from a specific project.</p>
-<p><strong>4.9.2</strong> Intent: To make it easier for recipients of the SPDX file to determine the original source of the identified file. If the project is not described in an SPDX Document, then ArtifactOf can be used.</p>
-<p>If the project is described in another SPDX Document, then Relationship should be used.</p>
-<p><strong>4.9.3</strong> Cardinality: Optional, one or many.</p>
-<p><strong>4.9.4</strong> Data Format: Single line of text. In <code>tag:value</code> format the ArtifactOfProjectName must precede any optional ArtifactOf optional properties (e.g. ArtifactOfHomePage and ArtifactOfURI).</p>
-<p><strong>4.9.5</strong> Tag: <code>ArtifactOfProjectName:</code></p>
-<p>Example:</p>
-<pre><code>ArtifactOfProjectName: Jena
-</code></pre>
-<p><strong>4.9.6</strong> RDF: Property <code>spdx:artifactOf/doap:Project/doap:name</code></p>
-<p>Example:</p>
-<pre><code>&lt;File&gt;
-    &lt;artifactOf&gt;
-        &lt;doap:Project&gt;
-            &lt;doap:name&gt;Jena&lt;/doap:name&gt;
-        &lt;/doap:Project&gt;
-    &lt;/artifactOf&gt;
-&lt;/File&gt;
-</code></pre>
-<h2 id="410-artifact-of-project-homepage-deprecated">4.10 Artifact of Project Homepage (deprecated) <a name="4.10"></a></h2>
-<p><strong>4.10.1</strong> Purpose: To indicate the location of the project from which the file has been derived.</p>
-<p><strong>4.10.2</strong> Intent: To make it easier for recipients of the SPDX file to determine the original source of the identified file. If the project is described in another SPDX Document, then Relationship should be used.</p>
-<p><strong>4.10.3</strong> Cardinality: Optional, one or many.</p>
-<p><strong>4.10.4</strong> Data Format: Uniform Resource Locator | <code>UNKNOWN</code>.</p>
-<p>In <code>tag:value</code> format all optional <code>ArtifactOf</code> fields must follow immediately below the ArtifactOfProjectName.</p>
-<p><strong>4.10.5</strong> Tag: <code>ArtifactOfProjectHomePage:</code></p>
-<p>Example:</p>
-<pre><code>ArtifactOfProjectHomePage: http://www.openjena.org/
-</code></pre>
-<p><strong>4.10.6</strong> RDF: <code>spdx:artifactOf/doap:Project/doap:homepage</code></p>
-<p>Example:</p>
-<pre><code>&lt;File&gt;
-    &lt;artifactOf&gt;
-        &lt;doap:Project&gt;
-            &lt;doap:homepage &gt;rttp://www.openjena.org/&lt;/doap:homepage&gt;
-        &lt;/doap:Project&gt;
-    &lt;/artifactOf&gt;
-&lt;/File&gt;
-</code></pre>
-<h2 id="411-artifact-of-project-uniform-resource-identifier-deprecated">4.11 Artifact of Project Uniform Resource Identifier (deprecated) <a name="4.11"></a></h2>
-<p><strong>4.11.1</strong> Purpose: To provide a linkage to the project resource in the DOAP document and permit interoperability between the different formats supported.</p>
-<p><strong>4.11.2</strong> Intent: To make it easier for recipients of the SPDX file to determine the original source of the identified file. If the project is described in another SPDX Document, then Relationship should be used.</p>
-<p><strong>4.11.3</strong> Cardinality: Optional, one or many.</p>
-<p><strong>4.11.4</strong> Data Format: Uniform Resource Identifier.</p>
-<p>In <code>tag:value</code> format all optional ArtifactOf fields must follow immediately below the ArtifactOfProjectName.</p>
-<p><strong>4.11.5</strong> Tag: <code>ArtifactOfProjectURI:</code></p>
-<p>Example:</p>
-<pre><code>ArtifactOfProjectURI: http://subversion.apache.org/doap.rdf
-</code></pre>
-<p><strong>4.11.6</strong> RDF: <code>spdx:artifactOf/doap</code></p>
-<p>Example:</p>
-<pre><code>&lt;File&gt;
-    &lt;artifactOf rdf:resource="http://subversion.apache.org/" /&gt;
-&lt;/File&gt;
-&lt;!-- Note: within the DOAP file at http://subversion.apache.org/doap.rdf
-the value "http://subversion.apache.org/" is the URI of the describes
-resource of type doap:Project --&gt;
-</code></pre>
 <h2 id="412-file-comment">4.12 File Comment <a name="4.12"></a></h2>
 <p><strong>4.12.1</strong> Purpose: This field provides a place for the SPDX file creator to record any general comments about the file.</p>
 <p><strong>4.12.2</strong> Intent: Here, the intent is to provide the recipient of the SPDX file with more information determined after careful analysis of a file.</p>
@@ -562,39 +475,6 @@ FileContributor: IBM Corporation
     &lt;fileContributor&gt; IBM Corporation &lt;/fileContributor&gt;
 &lt;/File&gt;
 </code></pre>
-<h2 id="415-file-dependencies-deprecated">4.15 File Dependencies (deprecated) <a name="4.15"></a></h2>
-<p>This field is deprecated since SPDX 2.0 in favor of using <a href="../7-relationships-between-SPDX-elements/">Section 7</a> which provides more granularity about relationships.</p>
-<p><strong>4.15.1</strong> Purpose: The field provides a place for the SPDX file creator to record a list of other files (referenceable within this SPDX file) which the file is a derivative of and/or depends on for the build (e.g., source file or build script for a binary program or library). The list of files may not necessarily represent the list of all file dependencies, but possibly the ones that impact the licensing and/or may be needed as part of the file distribution obligation.</p>
-<p><strong>4.15.2</strong> Intent: Here, the intent is to provide the recipient of the SPDX file with file dependency information based on the build system that created the file. These other files may impact the licensing of the file and/or may be required to satisfy the distribution obligation of the file (e.g., source files subject to a copyleft license).</p>
-<p><strong>4.15.3</strong> Cardinality: Optional, one or many.</p>
-<p><strong>4.15.4</strong> Data Format: Reference to the file within the SPDX document. For the <code>tag:value</code> format, this will be the filename. For the RDF format, it will be a reference to the actual file node.</p>
-<p><strong>4.15.5</strong> Tag: <code>FileDependency:</code></p>
-<p>Example:</p>
-<pre><code>FileDependency:./busybox-1.20.2/shell/match.h
-FileDependency:./busybox-1.20.2/shell/match.c
-FileDependency:./busybox-1.20.2/shell/ash.c
-</code></pre>
-<p><strong>4.15.6</strong> RDF: Property <code>spdx:fileDependency</code> in class <code>spdx:File</code></p>
-<p>Example:</p>
-<pre><code>&lt;File rdf:nodeID="A0"&gt;
-    &lt;fileName&gt;./package/source1.java&lt;/fileName&gt;
-&lt;/File&gt;
-
-&lt;File rdf:nodeID="A1"&gt;
-    &lt;fileName&gt;./package/source2.java&lt;/fileName&gt;
-&lt;/File&gt;
-
-&lt;File rdf:nodeID="A3"&gt;
-  &lt;fileName&gt;./package/source3.java&lt;/fileName&gt;
-&lt;/File&gt;
-
-&lt;File rdf:about="..."&gt;
-    &lt;fileName&gt;./package/mylibrary.jar&lt;/fileName&gt;
-    &lt;fileDependency rdf:nodeID="A0"/&gt;
-    &lt;fileDependency rdf:nodeID="A1"/&gt;
-    &lt;fileDependency rdf:nodeID="A2"/&gt;
-&lt;/File&gt;
-</code></pre>
               
             </div>
           </div>
@@ -615,7 +495,7 @@ FileDependency:./busybox-1.20.2/shell/ash.c
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2010 - 2020 Linux Foundation and its Contributors.</p>
+      <p>Copyright &copy; 2010 - 2019 Linux Foundation and its Contributors.</p>
     
   </div>
 

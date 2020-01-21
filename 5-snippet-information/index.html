@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>5 Snippet Information - specification v2.2.0</title>
+  <title>5 Snippet Information - specification v3.0 - DRAFT</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -36,7 +36,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> specification v2.2.0</a>
+        <a href=".." class="icon icon-home"> specification v3.0 - DRAFT</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -125,42 +125,22 @@
           
             <li class="toctree-l1">
 		
-    <a class="" href="../9-review-information-deprecated/">9 Review Information (deprecated)</a>
+    <a class="" href="../appendix-I-RDF-data-model-implementation-and-identifier-syntax/">Appendix I: RDF Data Model Implementation and Identifier Syntax</a>
 	    </li>
           
             <li class="toctree-l1">
 		
-    <a class="" href="../appendix-I-SPDX-license-list/">Appendix I: SPDX License List</a>
+    <a class="" href="../appendix-II-SPDX-license-expressions/">Appendix II: SPDX License Expressions</a>
 	    </li>
           
             <li class="toctree-l1">
 		
-    <a class="" href="../appendix-II-license-matching-guidelines-and-templates/">Appendix II: License Matching Guidelines and Templates</a>
+    <a class="" href="../appendix-III-external-repository-identifiers/">Appendix III: External Repository Identifiers</a>
 	    </li>
           
             <li class="toctree-l1">
 		
-    <a class="" href="../appendix-III-RDF-data-model-implementation-and-identifier-syntax/">Appendix III: RDF Data Model Implementation and Identifier Syntax</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../appendix-IV-SPDX-license-expressions/">Appendix IV: SPDX License Expressions</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../appendix-V-using-SPDX-short-identifiers-in-source-files/">Appendix V: Using SPDX short identifiers in Source Files</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../appendix-VI-external-repository-identifiers/">Appendix VI: External Repository Identifiers</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../appendix-VII-creative-commons-attribution-license-3.0-unported/">Appendix VII: Creative Commons Attribution License 3.0 Unported</a>
+    <a class="" href="../appendix-IV-creative-commons-attribution-license-3.0-unported/">Appendix IV: Creative Commons Attribution License 3.0 Unported</a>
 	    </li>
           
         </ul>
@@ -173,7 +153,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">specification v2.2.0</a>
+        <a href="..">specification v3.0 - DRAFT</a>
       </nav>
 
       
@@ -339,7 +319,7 @@ AND <code>number2</code> is less than or equal to the total number of lines in f
 </code></pre>
 <h2 id="55-snippet-concluded-license">5.5 Snippet Concluded License <a name="5.5"></a></h2>
 <p><strong>5.5.1</strong> Purpose: This field contains the license the SPDX file creator has concluded as governing the snippet or alternative values if the governing license cannot be determined. The options to populate this field are limited to:</p>
-<p>A valid SPDX License Expression as defined in Appendix IV.</p>
+<p>A valid SPDX License Expression as defined in <a href="../appendix-II-SPDX-license-expressions/">Appendix II</a>.</p>
 <p><code>NONE</code> should be used if there is no licensing information from which to conclude a license for the snippet.</p>
 <p><code>NOASSERTION</code> should be used if for the snippet:</p>
 <p>(i) the SPDX document creator has attempted to, but cannot reach a reasonable objective determination of the Concluded License;</p>
@@ -351,7 +331,7 @@ AND <code>number2</code> is less than or equal to the total number of lines in f
 <p><strong>5.5.3</strong> Cardinality: Mandatory, one.</p>
 <p><strong>5.5.4</strong> Data Format: <code>&lt;SPDX License Expression&gt;</code> | <code>NONE</code> | <code>NOASSERTION</code></p>
 <p>where:</p>
-<p><code>&lt;SPDX License Expression&gt;</code> is a valid SPDX License Expression as defined in Appendix IV.</p>
+<p><code>&lt;SPDX License Expression&gt;</code> is a valid SPDX License Expression as defined in <a href="../appendix-II-SPDX-license-expressions/">Appendix II</a>.</p>
 <p><strong>5.5.5</strong> Tag: <code>SnippetLicenseConcluded:</code></p>
 <p>Example:</p>
 <pre><code>SnippetLicenseConcluded: GPL-2.0
@@ -394,7 +374,7 @@ A reference to the license, denoted by LicenseRef-<code>[idstring]</code>, if th
 <p>| <code>NONE</code> | <code>NOASSERTION</code></p>
 <p>where:</p>
 <p><code>&lt;SPDX License Expression&gt;</code> is a valid SPDX License Expression</p>
-<p>as defined in <a href="../appendix-IV-SPDX-license-expressions/">Appendix IV</a>.</p>
+<p>as defined in <a href="../appendix-II-SPDX-license-expressions/">Appendix II</a>.</p>
 <p>"DocumentRef-"<code>[idstring]</code>: is an optional reference to an external SPDX</p>
 <p>document as described in <a href="../2-document-creation-information/#2.6">section 2.6</a></p>
 <p><code>[idstring]</code> is a unique string containing letters, numbers, <code>.</code> and/or <code>-</code>.</p>
@@ -515,7 +495,7 @@ when a commercial scanner identified it as being derived from file foo.c in pack
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2010 - 2020 Linux Foundation and its Contributors.</p>
+      <p>Copyright &copy; 2010 - 2019 Linux Foundation and its Contributors.</p>
     
   </div>
 

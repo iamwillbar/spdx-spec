@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>7 Relationships between SPDX Elements - specification v2.2.0</title>
+  <title>7 Relationships between SPDX Elements - specification v3.0 - DRAFT</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -36,7 +36,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> specification v2.2.0</a>
+        <a href=".." class="icon icon-home"> specification v3.0 - DRAFT</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -109,42 +109,22 @@
           
             <li class="toctree-l1">
 		
-    <a class="" href="../9-review-information-deprecated/">9 Review Information (deprecated)</a>
+    <a class="" href="../appendix-I-RDF-data-model-implementation-and-identifier-syntax/">Appendix I: RDF Data Model Implementation and Identifier Syntax</a>
 	    </li>
           
             <li class="toctree-l1">
 		
-    <a class="" href="../appendix-I-SPDX-license-list/">Appendix I: SPDX License List</a>
+    <a class="" href="../appendix-II-SPDX-license-expressions/">Appendix II: SPDX License Expressions</a>
 	    </li>
           
             <li class="toctree-l1">
 		
-    <a class="" href="../appendix-II-license-matching-guidelines-and-templates/">Appendix II: License Matching Guidelines and Templates</a>
+    <a class="" href="../appendix-III-external-repository-identifiers/">Appendix III: External Repository Identifiers</a>
 	    </li>
           
             <li class="toctree-l1">
 		
-    <a class="" href="../appendix-III-RDF-data-model-implementation-and-identifier-syntax/">Appendix III: RDF Data Model Implementation and Identifier Syntax</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../appendix-IV-SPDX-license-expressions/">Appendix IV: SPDX License Expressions</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../appendix-V-using-SPDX-short-identifiers-in-source-files/">Appendix V: Using SPDX short identifiers in Source Files</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../appendix-VI-external-repository-identifiers/">Appendix VI: External Repository Identifiers</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../appendix-VII-creative-commons-attribution-license-3.0-unported/">Appendix VII: Creative Commons Attribution License 3.0 Unported</a>
+    <a class="" href="../appendix-IV-creative-commons-attribution-license-3.0-unported/">Appendix IV: Creative Commons Attribution License 3.0 Unported</a>
 	    </li>
           
         </ul>
@@ -157,7 +137,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">specification v2.2.0</a>
+        <a href="..">specification v3.0 - DRAFT</a>
       </nav>
 
       
@@ -210,41 +190,6 @@
 <td>CONTAINED_BY</td>
 <td>Is to be used when SPDXRef-A is contained by SPDXRef-B.</td>
 <td>A SOURCE file <code>foo.c</code> is contained by ARCHIVE file <code>bar.tgz</code></td>
-</tr>
-<tr>
-<td>DEPENDENCY_OF</td>
-<td>Is to be used when SPDXRef-A is dependency of SPDXRef-B.</td>
-<td>A is explicitly stated as a dependency of B in a machine-readable file. Use when a package manager does not define scopes.</td>
-</tr>
-<tr>
-<td>BUILD_DEPENDENCY_OF</td>
-<td>Is to be used when SPDXRef-A is a build dependency of SPDXRef-B.</td>
-<td>A is in the <code>compile</code> scope of B in a Maven project.</td>
-</tr>
-<tr>
-<td>DEV_DEPENDENCY_OF</td>
-<td>Is to be used when SPDXRef-A is development dependency of SPDXRef-B.</td>
-<td>A is in the <code>devDependencies</code> scope of B in a Maven project.</td>
-</tr>
-<tr>
-<td>PROVIDED_DEPENDENCY_OF</td>
-<td>Is to be used when SPDXRef-A is a to be provided dependency of SPDXRef-B.</td>
-<td>A is in the <code>provided</code> scope of B in a Maven project, indicating that the project expects it to be provided by for instance by the container or JDK.</td>
-</tr>
-<tr>
-<td>TEST_DEPENDENCY_OF</td>
-<td>Is to be used when SPDXRef-A is test dependency of SPDXRef-B.</td>
-<td>A is in the <code>test</code> scope of B in a Maven project.</td>
-</tr>
-<tr>
-<td>RUNTIME_DEPENDENCY_OF</td>
-<td>Is to be used when SPDXRef-A is dependency required for during the execution of SPDXRef-B.</td>
-<td>A is in the <code>runtime</code> scope of B in a Maven project.</td>
-</tr>
-<tr>
-<td>EXAMPLE_OF</td>
-<td>Is to be used when SPDXRef-A is an example of SPDXRef-B.</td>
-<td>The file or snippet that illustrates how to use an application or library.</td>
 </tr>
 <tr>
 <td>GENERATES</td>
@@ -335,16 +280,6 @@
 <td>BUILD_TOOL_OF</td>
 <td>Is to be used when SPDXRef-A is used to to build SPDXRef-B.</td>
 <td>A SOURCE file <code>makefile.mk</code> is used to build an APPLICATION ‘zlib’.</td>
-</tr>
-<tr>
-<td>DEV_TOOL_OF</td>
-<td>Is to be used when SPDXRef-A is used as a development tool for SPDXRef-B.</td>
-<td>Any tool used for development such as a code debugger.</td>
-</tr>
-<tr>
-<td>TEST_TOOL_OF</td>
-<td>Is to be used when SPDXRef-A is used as a test tool for SPDXRef-B.</td>
-<td>Any tool used to test the code sucha as ESlint.</td>
 </tr>
 <tr>
 <td>DOCUMENTATION_OF</td>
@@ -466,7 +401,7 @@ RelationshipComment: This current document is an amendment of the SPDXA document
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2010 - 2020 Linux Foundation and its Contributors.</p>
+      <p>Copyright &copy; 2010 - 2019 Linux Foundation and its Contributors.</p>
     
   </div>
 
