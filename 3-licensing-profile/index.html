@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Appendix I: RDF Data Model Implementation and Identifier Syntax - specification v3.0 - DRAFT</title>
+  <title>3 Licensing Profile - specification v3.0 - DRAFT</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -18,9 +18,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Appendix I: RDF Data Model Implementation and Identifier Syntax";
-    var mkdocs_page_input_path = "appendix-I-RDF-data-model-implementation-and-identifier-syntax.md";
-    var mkdocs_page_url = "/appendix-I-RDF-data-model-implementation-and-identifier-syntax/";
+    var mkdocs_page_name = "3 Licensing Profile";
+    var mkdocs_page_input_path = "3-licensing-profile.md";
+    var mkdocs_page_url = "/3-licensing-profile/";
   </script>
   
   <script src="../js/jquery-2.1.1.min.js"></script>
@@ -63,26 +63,30 @@
     <a class="" href="../2-base-profile/">2 Base Profile</a>
 	    </li>
           
-            <li class="toctree-l1">
-		
-    <a class="" href="../3-licensing-profile/">3 Licensing Profile</a>
-	    </li>
-          
             <li class="toctree-l1 current">
 		
-    <a class="current" href="./">Appendix I: RDF Data Model Implementation and Identifier Syntax</a>
+    <a class="current" href="./">3 Licensing Profile</a>
     <ul class="subnav">
             
-    <li class="toctree-l2"><a href="#appendix-i-rdf-data-model-implementation-and-identifier-syntax">Appendix I: RDF Data Model Implementation and Identifier Syntax</a></li>
+    <li class="toctree-l2"><a href="#3-licensing-profile">3 Licensing Profile</a></li>
     
         <ul>
         
-            <li><a class="toctree-l3" href="#agent-and-tool-identifiers">Agent and Tool Identifiers</a></li>
+            <li><a class="toctree-l3" href="#31-overview">3.1 Overview</a></li>
+        
+            <li><a class="toctree-l3" href="#license-information">License Information</a></li>
+        
+            <li><a class="toctree-l3" href="#license-reference">License Reference</a></li>
         
         </ul>
     
 
     </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../appendix-I-RDF-data-model-implementation-and-identifier-syntax/">Appendix I: RDF Data Model Implementation and Identifier Syntax</a>
 	    </li>
           
             <li class="toctree-l1">
@@ -122,7 +126,7 @@
     
       
     
-    <li>Appendix I: RDF Data Model Implementation and Identifier Syntax</li>
+    <li>3 Licensing Profile</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -132,62 +136,41 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="appendix-i-rdf-data-model-implementation-and-identifier-syntax">Appendix I: RDF Data Model Implementation and Identifier Syntax</h1>
-<p>SPDX ® Vocabulary Specification</p>
-<p>See: <a href="http://spdx.org/rdf/ontology/spdx-3-0-DRAFT">http://spdx.org/rdf/ontology/spdx-3-0-DRAFT</a></p>
-<p>Version: 3.0-DRAFT</p>
-<p><img alt="SPDX 3.0-DRAFT RDF Ontology" src="../img/spdx-3.0-DRAFT-rdf-ontology.png" /></p>
-<p>Licensed under the <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution License 3.0 Unported</a>.</p>
-<h2 id="agent-and-tool-identifiers">Agent and Tool Identifiers</h2>
-<p>Fields that identify entities that have acted in relation to the SPDX file are single line of text which name the agent or
-tool and, optionally, provide contact information. For example, "Person: Jane Doe (jane.doe@example.com)",
-"Organization: ExampleCodeInspect (contact@example.com)" and "ool: LicenseFind - 1.0". The exact syntax of agent and tool identifications is described below in <a href="http://tools.ietf.org/html/rfc5234">ABNF</a>.</p>
-<pre><code>agent            = person / organization
-
-tool             = "Tool: " name 0*1( " " DASH " " version)
-
-person           = "Person: " name 0*1contact-info
-
-organization     = "Organization: " name 0*1contact-info
-
-name             = 1*( UNRESERVED ) / U+0022 1*( VCHAR-SANS-QUOTE ) U+0022
-
-contact-info     = " (" email-addr ")"
-
-email-addr       = local-name-atom *( "." local-name-atom ) "@" domain-name-atom 1*( "." domain-name-atom )
-
-version          = 1*VCHAR-SANS-QUOTE
-
-local-name-atom  = 1*( ALPHA / DIGIT /    ; Printable US-ASCII
-                       "!" / "#" /        ;  characters not including
-                       "$" / "%" /        ;  specials.
-                       "&amp;" / "'" /
-                       "*" / "+" /
-                       "-" / "/" /
-                       "=" / "?" /
-                       "^" / "_" /
-                       "`" / "{" /
-                       "|" / "}" /
-                       "~" )
-
-domain-name-atom = 1*( ALPHA / DIGIT / "-" )
-
-DASH             = U+2010 / U+2212 /   ; hyphen, minus, em dash and
-                   U+2013 / U+2014     ;  en dash
-
-
-UNRESERVED       = U+0020-U+0027 /     ; visible unicode characters
-                   U+0029-U+0080 /     ;  except '(' and dashes
-                   U+00A0-U+200F /
-                   U+2011-U+2027 /
-                   U+202A-U+2211 /
-                   U+2213-U+E01EF
-
-
-VCHAR-SANS-QUOTE = U+0020-U+0021 /  ; visible unicode characters
-                   U+0023-U+0080 /  ;  except quotation mark
-                   U+00a0-U+E01EF
-</code></pre>
+                <h1 id="3-licensing-profile">3 Licensing Profile</h1>
+<h2 id="31-overview">3.1 Overview</h2>
+<h3 id="entities">Entities</h3>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Parent</th>
+<th>Required</th>
+<th>Cardinality</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#license-information">License Information</a></td>
+<td><a href="../2-base-profile/#artifact">Artifact</a> (<a href="../2-base-profile/#package">Package</a>, <a href="../2-base-profile/#file">File</a>, <a href="../2-base-profile/#snippet">Snippet</a>)</td>
+<td>Yes</td>
+<td>1..1</td>
+</tr>
+<tr>
+<td><a href="#license-reference">License Reference</a></td>
+<td><a href="../2-base-profile/#document-root">Document Root</a></td>
+<td>No</td>
+<td>0..*</td>
+</tr>
+</tbody>
+</table>
+<h2 id="license-information">License Information</h2>
+<p>Parent: Package, File, Snippet, or External Artifact
+Cardinality: 1 per Artifact</p>
+<h3 id="fields">Fields</h3>
+<h3 id="declared-license">Declared License</h3>
+<h3 id="concluded-license">Concluded License</h3>
+<h3 id="distributed-license">Distributed License</h3>
+<h2 id="license-reference">License Reference</h2>
               
             </div>
           </div>
@@ -195,10 +178,10 @@ VCHAR-SANS-QUOTE = U+0020-U+0021 /  ; visible unicode characters
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../appendix-II-SPDX-license-expressions/" class="btn btn-neutral float-right" title="Appendix II: SPDX License Expressions">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../appendix-I-RDF-data-model-implementation-and-identifier-syntax/" class="btn btn-neutral float-right" title="Appendix I: RDF Data Model Implementation and Identifier Syntax">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../3-licensing-profile/" class="btn btn-neutral" title="3 Licensing Profile"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../2-base-profile/" class="btn btn-neutral" title="2 Base Profile"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -226,10 +209,10 @@ VCHAR-SANS-QUOTE = U+0020-U+0021 /  ; visible unicode characters
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../3-licensing-profile/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../2-base-profile/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../appendix-II-SPDX-license-expressions/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../appendix-I-RDF-data-model-implementation-and-identifier-syntax/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
