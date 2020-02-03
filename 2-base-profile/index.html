@@ -55,7 +55,7 @@
           
             <li class="toctree-l1">
 		
-    <a class="" href="../1-rationale/">1 Rationale</a>
+    <a class="" href="../1-overview/">1 Overview</a>
 	    </li>
           
             <li class="toctree-l1 current">
@@ -67,11 +67,11 @@
     
         <ul>
         
-            <li><a class="toctree-l3" href="#21-overview">2.1 Overview</a></li>
+            <li><a class="toctree-l3" href="#overview">Overview</a></li>
         
-            <li><a class="toctree-l3" href="#22-document-root">2.2 Document Root</a></li>
+            <li><a class="toctree-l3" href="#document-root">Document Root</a></li>
         
-            <li><a class="toctree-l3" href="#23-document-metadata">2.3 Document Metadata</a></li>
+            <li><a class="toctree-l3" href="#document-metadata">Document Metadata</a></li>
         
             <li><a class="toctree-l3" href="#24-artifact">2.4 Artifact</a></li>
         
@@ -94,7 +94,7 @@
           
             <li class="toctree-l1">
 		
-    <a class="" href="../appendix-I-RDF-data-model-implementation-and-identifier-syntax/">Appendix I: RDF Data Model Implementation and Identifier Syntax</a>
+    <a class="" href="../appendix-I-creative-commons-attribution-license-3.0-unported/">Appendix I: Creative Commons Attribution License 3.0 Unported</a>
 	    </li>
           
             <li class="toctree-l1">
@@ -109,7 +109,7 @@
           
             <li class="toctree-l1">
 		
-    <a class="" href="../appendix-IV-creative-commons-attribution-license-3.0-unported/">Appendix IV: Creative Commons Attribution License 3.0 Unported</a>
+    <a class="" href="../appendix-IV-RDF-data-model-implementation-and-identifier-syntax/">Appendix IV: RDF Data Model Implementation and Identifier Syntax</a>
 	    </li>
           
         </ul>
@@ -144,10 +144,10 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="2-base-profile">2 Base Profile</h1>
+                <h1 id="2-base-profile">2 Base Profile<a class="headerlink" href="#2-base-profile" title="Permanent link">&para;</a></h1>
 <p>The Base Profile provides the core functionality for describing artifacts and the relationships between them.</p>
-<h2 id="21-overview">2.1 Overview</h2>
-<h3 id="entities">Entities</h3>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<h3 id="entities">Entities<a class="headerlink" href="#entities" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
@@ -202,9 +202,9 @@
 </tr>
 </tbody>
 </table>
-<h2 id="22-document-root">2.2 Document Root</h2>
+<h2 id="document-root">Document Root<a class="headerlink" href="#document-root" title="Permanent link">&para;</a></h2>
 <p>Some of the supported formats require the document to have a root entity.</p>
-<h3 id="examples">Examples</h3>
+<h3 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
@@ -235,10 +235,10 @@
 </tr>
 </tbody>
 </table>
-<h2 id="23-document-metadata">2.3 Document Metadata</h2>
+<h2 id="document-metadata">Document Metadata<a class="headerlink" href="#document-metadata" title="Permanent link">&para;</a></h2>
 <p>Information about the SPDX document itself.</p>
 <p>Provides necessary information to understand the provenance of the document and to enable forward and backward compatibility for processing tools.</p>
-<h3 id="metadata">Metadata</h3>
+<h3 id="metadata">Metadata<a class="headerlink" href="#metadata" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
@@ -257,7 +257,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="examples_1">Examples</h3>
+<h3 id="examples_1">Examples<a class="headerlink" href="#examples_1" title="Permanent link">&para;</a></h3>
 <pre><code class="yaml">documentMetadata:
   spdxVersion: SPDX-3.0
   dataLicense: CC0-1.0
@@ -273,7 +273,7 @@ identities:
     email: iamwillbar@github.com
 </code></pre>
 
-<h3 id="fields">Fields</h3>
+<h3 id="fields">Fields<a class="headerlink" href="#fields" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
@@ -320,11 +320,11 @@ identities:
 </tr>
 </tbody>
 </table>
-<h4 id="spdx-version">SPDX Version</h4>
+<h4 id="spdx-version">SPDX Version<a class="headerlink" href="#spdx-version" title="Permanent link">&para;</a></h4>
 <p>Version of the SPDX Specification that the document complies with.</p>
 <p>Enables tools and humans to understand how to process the document and to support backward and forward compatibility.</p>
 <p>The version number consists of a major and a minor portion. The major portion will be incremented when incompatible changes are made to the specification, and the minor field will be incremented when backwards compatible changes are made.</p>
-<h5 id="metadata_1">Metadata</h5>
+<h5 id="metadata_1">Metadata<a class="headerlink" href="#metadata_1" title="Permanent link">&para;</a></h5>
 <table>
 <thead>
 <tr>
@@ -351,7 +351,7 @@ identities:
 </tr>
 </tbody>
 </table>
-<h5 id="examples_2">Examples</h5>
+<h5 id="examples_2">Examples<a class="headerlink" href="#examples_2" title="Permanent link">&para;</a></h5>
 <table>
 <thead>
 <tr>
@@ -382,9 +382,9 @@ identities:
 </tr>
 </tbody>
 </table>
-<h4 id="data-license">Data License</h4>
+<h4 id="data-license">Data License<a class="headerlink" href="#data-license" title="Permanent link">&para;</a></h4>
 <p>License that the contents of the document is available under.</p>
-<h5 id="metadata_2">Metadata</h5>
+<h5 id="metadata_2">Metadata<a class="headerlink" href="#metadata_2" title="Permanent link">&para;</a></h5>
 <table>
 <thead>
 <tr>
@@ -411,7 +411,7 @@ identities:
 </tr>
 </tbody>
 </table>
-<h5 id="examples_3">Examples</h5>
+<h5 id="examples_3">Examples<a class="headerlink" href="#examples_3" title="Permanent link">&para;</a></h5>
 <table>
 <thead>
 <tr>
@@ -442,10 +442,10 @@ identities:
 </tr>
 </tbody>
 </table>
-<h4 id="spdx-identifier">SPDX Identifier</h4>
+<h4 id="spdx-identifier">SPDX Identifier<a class="headerlink" href="#spdx-identifier" title="Permanent link">&para;</a></h4>
 <p>Identifies the current SPDX document so that it may be referenced in relationships from within the current document or from external documents. </p>
 <p>See <a href="#relationship">Relationship</a> for more information.</p>
-<h5 id="metadata_3">Metadata</h5>
+<h5 id="metadata_3">Metadata<a class="headerlink" href="#metadata_3" title="Permanent link">&para;</a></h5>
 <table>
 <thead>
 <tr>
@@ -472,7 +472,7 @@ identities:
 </tr>
 </tbody>
 </table>
-<h5 id="examples_4">Examples</h5>
+<h5 id="examples_4">Examples<a class="headerlink" href="#examples_4" title="Permanent link">&para;</a></h5>
 <table>
 <thead>
 <tr>
@@ -503,11 +503,11 @@ identities:
 </tr>
 </tbody>
 </table>
-<h4 id="spdx-document-namespace">SPDX Document Namespace</h4>
-<h4 id="document-name">Document Name</h4>
+<h4 id="spdx-document-namespace">SPDX Document Namespace<a class="headerlink" href="#spdx-document-namespace" title="Permanent link">&para;</a></h4>
+<h4 id="document-name">Document Name<a class="headerlink" href="#document-name" title="Permanent link">&para;</a></h4>
 <p>Human friendly name for the SPDX document as designed by the creator.</p>
 <p>Provides an easier way for humans to refer to the document rather than the <a href="#spdx-document-namespace">SPDX Document Namespace</a>, although there are no guarantees of uniqueness.</p>
-<h5 id="metadata_4">Metadata</h5>
+<h5 id="metadata_4">Metadata<a class="headerlink" href="#metadata_4" title="Permanent link">&para;</a></h5>
 <table>
 <thead>
 <tr>
@@ -530,7 +530,7 @@ identities:
 </tr>
 </tbody>
 </table>
-<h5 id="examples_5">Examples</h5>
+<h5 id="examples_5">Examples<a class="headerlink" href="#examples_5" title="Permanent link">&para;</a></h5>
 <table>
 <thead>
 <tr>
@@ -561,9 +561,9 @@ identities:
 </tr>
 </tbody>
 </table>
-<h3 id="created">Created</h3>
+<h3 id="created">Created<a class="headerlink" href="#created" title="Permanent link">&para;</a></h3>
 <p>When the SPDX document was originally created.</p>
-<h5 id="metadata_5">Metadata</h5>
+<h5 id="metadata_5">Metadata<a class="headerlink" href="#metadata_5" title="Permanent link">&para;</a></h5>
 <table>
 <thead>
 <tr>
@@ -590,7 +590,7 @@ identities:
 </tr>
 </tbody>
 </table>
-<h5 id="examples_6">Examples</h5>
+<h5 id="examples_6">Examples<a class="headerlink" href="#examples_6" title="Permanent link">&para;</a></h5>
 <table>
 <thead>
 <tr>
@@ -621,9 +621,9 @@ identities:
 </tr>
 </tbody>
 </table>
-<h3 id="creators">Creators</h3>
+<h3 id="creators">Creators<a class="headerlink" href="#creators" title="Permanent link">&para;</a></h3>
 <p>Who (or what, in the case of a tool) created the SPDX document.</p>
-<h5 id="metadata_6">Metadata</h5>
+<h5 id="metadata_6">Metadata<a class="headerlink" href="#metadata_6" title="Permanent link">&para;</a></h5>
 <table>
 <thead>
 <tr>
@@ -646,7 +646,7 @@ identities:
 </tr>
 </tbody>
 </table>
-<h5 id="examples_7">Examples</h5>
+<h5 id="examples_7">Examples<a class="headerlink" href="#examples_7" title="Permanent link">&para;</a></h5>
 <table>
 <thead>
 <tr>
@@ -677,9 +677,9 @@ identities:
 </tr>
 </tbody>
 </table>
-<h2 id="24-artifact">2.4 Artifact</h2>
+<h2 id="24-artifact">2.4 Artifact<a class="headerlink" href="#24-artifact" title="Permanent link">&para;</a></h2>
 <p><code>Artifact</code> is an abstract concept that can refer to a <a href="#package">Package</a>, <a href="#file">File</a>, or <a href="#snippet">Snippet</a>. Any of these can be used where an <code>Artifact</code> is required.</p>
-<h3 id="fields_1">Fields</h3>
+<h3 id="fields_1">Fields<a class="headerlink" href="#fields_1" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
@@ -696,8 +696,8 @@ identities:
 </tr>
 </tbody>
 </table>
-<h3 id="package">Package</h3>
-<h4 id="fields_2">Fields</h4>
+<h3 id="package">Package<a class="headerlink" href="#package" title="Permanent link">&para;</a></h3>
+<h4 id="fields_2">Fields<a class="headerlink" href="#fields_2" title="Permanent link">&para;</a></h4>
 <table>
 <thead>
 <tr>
@@ -714,8 +714,8 @@ identities:
 </tr>
 </tbody>
 </table>
-<h3 id="file">File</h3>
-<h4 id="fields_3">Fields</h4>
+<h3 id="file">File<a class="headerlink" href="#file" title="Permanent link">&para;</a></h3>
+<h4 id="fields_3">Fields<a class="headerlink" href="#fields_3" title="Permanent link">&para;</a></h4>
 <table>
 <thead>
 <tr>
@@ -732,8 +732,8 @@ identities:
 </tr>
 </tbody>
 </table>
-<h3 id="snippet">Snippet</h3>
-<h4 id="fields_4">Fields</h4>
+<h3 id="snippet">Snippet<a class="headerlink" href="#snippet" title="Permanent link">&para;</a></h3>
+<h4 id="fields_4">Fields<a class="headerlink" href="#fields_4" title="Permanent link">&para;</a></h4>
 <table>
 <thead>
 <tr>
@@ -750,11 +750,11 @@ identities:
 </tr>
 </tbody>
 </table>
-<h2 id="25-identity">2.5 Identity</h2>
+<h2 id="25-identity">2.5 Identity<a class="headerlink" href="#25-identity" title="Permanent link">&para;</a></h2>
 <p>Identity is an abstract concept that can refer to a <a href="#person">Person</a>, <a href="#organization">Organization</a>, or <a href="#tool">Tool</a>. Any of these can be used where an <code>Identity</code> is required.</p>
-<h3 id="person">Person</h3>
+<h3 id="person">Person<a class="headerlink" href="#person" title="Permanent link">&para;</a></h3>
 <p>Represents a natural person.</p>
-<h4 id="fields_5">Fields</h4>
+<h4 id="fields_5">Fields<a class="headerlink" href="#fields_5" title="Permanent link">&para;</a></h4>
 <table>
 <thead>
 <tr>
@@ -771,11 +771,11 @@ identities:
 </tr>
 </tbody>
 </table>
-<h5 id="person-name">Person Name</h5>
-<h3 id="organization">Organization</h3>
+<h5 id="person-name">Person Name<a class="headerlink" href="#person-name" title="Permanent link">&para;</a></h5>
+<h3 id="organization">Organization<a class="headerlink" href="#organization" title="Permanent link">&para;</a></h3>
 <p>Represents an organization.</p>
-<h3 id="tool">Tool</h3>
-<h4 id="fields_6">Fields</h4>
+<h3 id="tool">Tool<a class="headerlink" href="#tool" title="Permanent link">&para;</a></h3>
+<h4 id="fields_6">Fields<a class="headerlink" href="#fields_6" title="Permanent link">&para;</a></h4>
 <table>
 <thead>
 <tr>
@@ -797,11 +797,11 @@ identities:
 </tr>
 </tbody>
 </table>
-<h5 id="tool-name">Tool Name</h5>
-<h5 id="tool-version">Tool Version</h5>
-<h2 id="26-relationship">2.6 Relationship</h2>
+<h5 id="tool-name">Tool Name<a class="headerlink" href="#tool-name" title="Permanent link">&para;</a></h5>
+<h5 id="tool-version">Tool Version<a class="headerlink" href="#tool-version" title="Permanent link">&para;</a></h5>
+<h2 id="26-relationship">2.6 Relationship<a class="headerlink" href="#26-relationship" title="Permanent link">&para;</a></h2>
 <p>Establishes a relationship between <code>Artifact</code>s either in the same SPDX document or in different SPDX documents.</p>
-<h3 id="fields_7">Fields</h3>
+<h3 id="fields_7">Fields<a class="headerlink" href="#fields_7" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
@@ -828,13 +828,13 @@ identities:
 </tr>
 </tbody>
 </table>
-<h3 id="relationship-from">Relationship From</h3>
-<h3 id="relationship-to">Relationship To</h3>
-<h3 id="relationship-type">Relationship Type</h3>
+<h3 id="relationship-from">Relationship From<a class="headerlink" href="#relationship-from" title="Permanent link">&para;</a></h3>
+<h3 id="relationship-to">Relationship To<a class="headerlink" href="#relationship-to" title="Permanent link">&para;</a></h3>
+<h3 id="relationship-type">Relationship Type<a class="headerlink" href="#relationship-type" title="Permanent link">&para;</a></h3>
 <!-- TODO: Is the reverse direction implied or should it be declared explicitly? -->
 
-<h2 id="27-annotation">2.7 Annotation</h2>
-<h3 id="fields_8">Fields</h3>
+<h2 id="27-annotation">2.7 Annotation<a class="headerlink" href="#27-annotation" title="Permanent link">&para;</a></h2>
+<h3 id="fields_8">Fields<a class="headerlink" href="#fields_8" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
@@ -876,7 +876,7 @@ identities:
         <a href="../3-licensing-profile/" class="btn btn-neutral float-right" title="3 Licensing Profile">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../1-rationale/" class="btn btn-neutral" title="1 Rationale"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../1-overview/" class="btn btn-neutral" title="1 Overview"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -904,7 +904,7 @@ identities:
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../1-rationale/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../1-overview/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
         <span style="margin-left: 15px"><a href="../3-licensing-profile/" style="color: #fcfcfc">Next &raquo;</a></span>
